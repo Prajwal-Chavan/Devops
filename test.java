@@ -1,6 +1,6 @@
 class Test
 {
-public static vod main(String []args)
+public static void main(String []args)
 {
   System.out.println("Hi");
 }
