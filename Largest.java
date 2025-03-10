@@ -2,15 +2,23 @@ public class Largest {
 
     public static void main(String[] args) {
 
-        double n1 = -4.5, n2 = 3.9, n3 = 2.5;
+        float first = 1.20f, second = 2.45f;
 
-        if( n1 >= n2 && n1 >= n3)
-            System.out.println(n1 + " is the largest number.");
+        System.out.println("--Before swap--");
+        System.out.println("First number = " + first);
+        System.out.println("Second number = " + second);
 
-        else if (n2 >= n1 && n2 >= n3)
-            System.out.println(n2 + " is the largest number.");
+        // Value of first is assigned to temporary
+        float temporary = first;
 
-        else
-            System.out.println(n3 + " is the largest number.");
+        // Value of second is assigned to first
+        first = second;
+
+        // Value of temporary (which contains the initial value of first) is assigned to second
+        second = temporary;
+
+        System.out.println("--After swap--");
+        System.out.println("First number = " + first);
+        System.out.println("Second number = " + second);
     }
 }
